@@ -1,6 +1,6 @@
 {
   "name": "msb_pay_api",
-  "version": "v2",
+  "version": "2.0.0",
   "description": "API_specification_for_payment_processing_via_the_MySchoolBucks_com_cart_checkout__br__a_hrefMSBPayAPI_v2_changelog_txtChangeloga",
   "license": "Unlicense",
   "main": "distribution/index",
