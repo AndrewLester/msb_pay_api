@@ -2,7 +2,8 @@
   "plugins": [
     ["babel-plugin-transform-builtin-extend", {
       "globals": ["Error", "Array"]
-    }]
+    }],
+    "@babel/plugin-proposal-class-properties"
   ],
   "presets": ["env", "stage-0"]
 }

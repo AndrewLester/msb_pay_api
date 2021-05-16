@@ -3,22 +3,25 @@
   "version": "v2",
   "description": "API_specification_for_payment_processing_via_the_MySchoolBucks_com_cart_checkout__br__a_hrefMSBPayAPI_v2_changelog_txtChangeloga",
   "license": "Unlicense",
-  "main": "src/index.js",
+  "main": "src/index",
   "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir distribution",
     "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "browser": {
     "fs": false
   },
   "dependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
     "superagent": "3.7.0"
   },
   "devDependencies": {
-    "babel-core": "6.26.0",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "expect.js": "~0.3.1",
     "mocha": "~2.3.4",
