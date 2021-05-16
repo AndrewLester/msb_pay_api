@@ -5,5 +5,5 @@
     }],
     "@babel/plugin-proposal-class-properties"
   ],
-  "presets": ["env", "stage-0"]
+  "presets": ["@babel/preset-env"]
 }

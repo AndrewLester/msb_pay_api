@@ -28,43 +28,43 @@ export default class PayApiEventType {
          * value: "cart.authorized"
          * @const
          */
-        cart.authorized = "cart.authorized";
+        cartAuthorized = "cart.authorized";
 
         /**
          * value: "cart.processed"
          * @const
          */
-        cart.processed = "cart.processed";
+        cartProcessed = "cart.processed";
 
         /**
          * value: "cart.canceled"
          * @const
          */
-        cart.canceled = "cart.canceled";
+        cartCanceled = "cart.canceled";
 
         /**
          * value: "payment.settled"
          * @const
          */
-        payment.settled = "payment.settled";
+        paymentSettled = "payment.settled";
 
         /**
          * value: "payment.authorized"
          * @const
          */
-        payment.authorized = "payment.authorized";
+        paymentAuthorized = "payment.authorized";
 
         /**
          * value: "payment.failed"
          * @const
          */
-        payment.failed = "payment.failed";
+        paymentFailed = "payment.failed";
 
         /**
          * value: "payment.refunded"
          * @const
          */
-        payment.refunded = "payment.refunded";
+        paymentRefunded = "payment.refunded";
 
 
     /**
