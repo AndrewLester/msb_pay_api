@@ -78,7 +78,7 @@ export default class Cart {
                 obj['checkoutStyle'] = ApiClient.convertToType(data['checkoutStyle'], 'String');
             }
             if (data.hasOwnProperty('cartItems')) {
-                obj['cartItems'] = CartItem.constructFromObject(data['cartItems']);
+                obj['cartItems'] = ApiClient.convertToType(data['cartItems'], [CartItem]);
             }
             if (data.hasOwnProperty('paymentPreauthPolicy')) {
                 obj['paymentPreauthPolicy'] = ApiClient.convertToType(data['paymentPreauthPolicy'], 'String');
@@ -140,7 +140,7 @@ export default class Cart {
     */
     'checkoutStyle' = undefined;
     /**
-    * @member {module:model/CartItem} cartItems
+    * @member {Array.<module:model/CartItem>} cartItems
     */
     'cartItems' = undefined;
     /**
