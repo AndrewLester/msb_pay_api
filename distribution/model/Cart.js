@@ -120,7 +120,7 @@ var Cart = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('cartItems')) {
-          obj['cartItems'] = _CartItem["default"].constructFromObject(data['cartItems']);
+          obj['cartItems'] = _ApiClient["default"].convertToType(data['cartItems'], [_CartItem["default"]]);
         }
 
         if (data.hasOwnProperty('paymentPreauthPolicy')) {
